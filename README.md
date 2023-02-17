@@ -1,4 +1,4 @@
-# GitTest - A test project for project version management via Git
+# GitTest - A test project for project management via Git
 
 ## I. Introduction
 
