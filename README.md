@@ -12,4 +12,6 @@
 
 ### B. 关于Github
 
-[1] [Github简明教程 - 菜鸟教程](https://www.runoob.com/w3cnote/git-guide.html)
+[1] [Github官网](https://github.com/)
+
+[X] [Github简明教程 - 菜鸟教程](https://www.runoob.com/w3cnote/git-guide.html)
