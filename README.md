@@ -1,10 +1,10 @@
 # GitTest - A test project for project management via Github
 
-## I. Introduction
+## I. 简介
 
-## II. XXX
+## II. 工作流程
 
-### A. Establish connection with Github
+### A. 建立与Github的连接
 
 ```
 $ ssh -T git@github.com
@@ -13,11 +13,14 @@ Hi MajestyV! You've successfully authenticated, but GitHub does not provide shel
 
 ### B. Managing project? (not yield decided)
 
-## III. Common command lines (常用命令行)
+## III. 基本操作
 
-### A. git
+### (X) git pull - 下载远程代码并合并
+git pull 命令用于从远程获取代码并合并本地的版本。
 
-```git push```命令用于从将本地的分支版本上传到远程并合并。
+### (X) git push - 	上传远程代码并合并
+
+git push 命令用于从将本地的分支版本上传到远程并合并。
 
 ```
 $ git push <远程主机名> <本地分支名>:<远程分支名>
@@ -28,6 +31,8 @@ $ git push <远程主机名> <本地分支名>:<远程分支名>
 ```
 $ git push <远程主机名> <本地分支名>
 ```
+
+### (X) git
 
 ## External links
 
