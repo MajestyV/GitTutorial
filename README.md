@@ -2,12 +2,16 @@
 
 ## I. Introduction
 
-## II. Establish connection with Github
+## II. XXX
+
+### A. Establish connection with Github
 
 ```
 $ ssh -T git@github.com
 Hi MajestyV! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+
+### B. Managing project? (not yield decided)
 
 ## External links
 
