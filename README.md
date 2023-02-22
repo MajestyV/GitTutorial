@@ -24,7 +24,7 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 ```
 Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/liusongwei/.ssh/id_rsa):  # 初次生成SSH key可以选择密钥文件的存放地址，建议直接回车使用默认选项以防忘记存放位置
+Enter file in which to save the key (/Users/liusongwei/.ssh/id_rsa):  # 首次生成SSH Key可设置密钥存放地址，对于健忘人士，建议直接回车
 Enter passphrase (empty for no passphrase):                           # 登陆密码，对于健忘人士，建议直接回车不要密码
 Enter same passphrase again:                                          # 如未设置密码，直接回车就好
 Your identification has been saved in /Users/liusongwei/.ssh/id_rsa
