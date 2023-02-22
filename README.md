@@ -19,10 +19,28 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 标签-C后面的内容为注释，为了方便区分，可以把```your_email@youremail.com```改为个人的Github账号（当然，不管也是没问题的）。之后会要求确认路径和输入密码，在此只需一直回车选择默认选项就行，就像这样：
 
 ```
-ssh-keygen -t rsa -C "youremail@example.com"ssh-keygen -t rsa -C "youremail@example.com"
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase):   
+Enter same passphrase again: 
+Your identification has been saved in /Users/liusongwei/.ssh/id_rsa_github
+Your public key has been saved in /Users/liusongwei/.ssh/id_rsa_github.pub
+The key fingerprint is:
+SHA256:GTFbdl7uJAnG4tmCmH/frOIbM1JCAO1g5YuowSmXXg8 sl4417@columbia.edu
+The key's randomart image is:
++---[RSA 3072]----+
+|  .+o   o.= . .  |
+|  o...  .B.+ +   |
+| . o.o.oo+  + o  |
+|...o+o. +o.  +   |
+|+o+ E.. S.    .  |
+|o+ . o.o.        |
+|. .   o.+. o     |
+|       ..+. o    |
+|       .oo..     |
++----[SHA256]-----+
 ```
 
-XXX
+
 
 成功的话会在~/下生成.ssh文件夹，里面存放着私钥（id_rsa）和公钥（id_rsa.pub）。 利用记事本打开 id_rsa.pub，复制里面的公钥并上传到Github即可。详细操作可见这篇博文：[如何使用SSH连接到Github](https://zhuanlan.zhihu.com/p/111344840)。然后，我们利用```ssh -T git@github.com```命令与Github连接即可。首次连接会返回以下信息：
 
