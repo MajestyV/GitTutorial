@@ -35,15 +35,15 @@ The key fingerprint is:
 SHA256:GTFbdl7uJAnG4tmCmH/frOIbM1JCAO1g5YuowSmXXg8 sl4417@columbia.edu
 The key's randomart image is:
 +---[RSA 3072]----+
-|  .+o   o.= . .  |
-|  o...  .B.+ +   |
-| . o.o.oo+  + o  |
-|...o+o. +o.  +   |
-|+o+ E.. S.    .  |
-|o+ . o.o.        |
-|. .   o.+. o     |
-|       ..+. o    |
-|       .oo..     |
+|           . o   |
+|   . .    . . +  |
+|  . o . .  ... . |
+|   o o o o o.+.  |
+|  o . . E *.o.o. |
+|   o . . +.B+o. .|
+|    . . o.=+=o.o |
+|       ..o ===o  |
+|      ..  o+Bo   |
 +----[SHA256]-----+
 ```
 
