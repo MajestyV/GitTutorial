@@ -16,13 +16,13 @@ Git并不像[SVN](https://subversion.apache.org/)那样有个中心服务器。�
 $ ssh-keygen -t rsa -C "youremail@example.com"
 ```
 
-标签-C后面的内容为注释，为了方便区分，可以把your_email@youremail.com改为个人的Github账号（当然，不管也是没问题的）。之后会要求确认路径和输入密码，在此只需一直回车选择默认选项就行，就像这样：
+标签-C后面的内容为注释，为了方便区分，可以把```your_email@youremail.com```改为个人的Github账号（当然，不管也是没问题的）。之后会要求确认路径和输入密码，在此只需一直回车选择默认选项就行，就像这样：
 
 ```
 ssh-keygen -t rsa -C "youremail@example.com"ssh-keygen -t rsa -C "youremail@example.com"
 ```
 
-
+XXX
 
 成功的话会在~/下生成.ssh文件夹，里面存放着私钥（id_rsa）和公钥（id_rsa.pub）。 利用记事本打开 id_rsa.pub，复制里面的公钥并上传到Github即可。详细操作可见这篇博文：[如何使用SSH连接到Github](https://zhuanlan.zhihu.com/p/111344840)。然后，我们利用```ssh -T git@github.com```命令与Github连接即可。首次连接会返回以下信息：
 
