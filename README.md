@@ -16,15 +16,19 @@ Git并不像[SVN](https://subversion.apache.org/)那样有个中心服务器。�
 $ ssh-keygen -t rsa -C "youremail@example.com"
 ```
 
+有时如果我们有很多
+
+
+
 标签-C后面的内容为注释，为了方便区分，可以把```your_email@youremail.com```改为个人的Github账号（当然，不管也是没问题的）。之后会要求确认路径和输入密码，在此只需一直回车选择默认选项就行，就像这样：
 
 ```
 Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/liusongwei/.ssh/id_rsa_github):
-Enter passphrase (empty for no passphrase):   
-Enter same passphrase again: 
-Your identification has been saved in /Users/liusongwei/.ssh/id_rsa_github
-Your public key has been saved in /Users/liusongwei/.ssh/id_rsa_github.pub
+Enter file in which to save the key (/Users/liusongwei/.ssh/id_rsa):  # 初次生成SSH key可以选择密钥文件的存放地址，建议直接回车使用默认选项以防忘记存放位置
+Enter passphrase (empty for no passphrase):                           # 登陆密码，对于健忘人士，建议直接回车不要密码
+Enter same passphrase again:                                          # 如未设置密码，直接回车就好
+Your identification has been saved in /Users/liusongwei/.ssh/id_rsa
+Your public key has been saved in /Users/liusongwei/.ssh/id_rsa.pub
 The key fingerprint is:
 SHA256:GTFbdl7uJAnG4tmCmH/frOIbM1JCAO1g5YuowSmXXg8 sl4417@columbia.edu
 The key's randomart image is:
