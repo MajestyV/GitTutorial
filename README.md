@@ -16,7 +16,9 @@ Git并不像[SVN](https://subversion.apache.org/)那样有个中心服务器。�
 $ ssh-keygen -t rsa -C "youremail@example.com"
 ```
 
-有时如果我们有很多
+有时我们的本地机器可能会用到多个Git账号对于不同的项目或者是远程服务器，此时我们就需要不同的SSH Key来对应不同Git账号。但是如果我们已经有生成好的SSH Key文件又直接通过上述命令行来生成新Key，新的密钥就会把老的密钥覆盖掉。此时，我们就可以通过定义新的文件名来对密钥加以区分：
+
+
 
 
 
@@ -24,7 +26,7 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 ```
 Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/liusongwei/.ssh/id_rsa):  # 首次生成SSH Key可设置密钥存放地址，对于健忘人士，建议直接回车
+Enter file in which to save the key (/Users/liusongwei/.ssh/id_rsa):  # 首次生成SSH Key可选择密钥存放地址，对于健忘人士，建议直接回车
 Enter passphrase (empty for no passphrase):                           # 登陆密码，对于健忘人士，建议直接回车不要密码
 Enter same passphrase again:                                          # 如未设置密码，直接回车就好
 Your identification has been saved in /Users/liusongwei/.ssh/id_rsa
