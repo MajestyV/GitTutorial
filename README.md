@@ -20,6 +20,7 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 ```
 Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/liusongwei/.ssh/id_rsa_github):
 Enter passphrase (empty for no passphrase):   
 Enter same passphrase again: 
 Your identification has been saved in /Users/liusongwei/.ssh/id_rsa_github
