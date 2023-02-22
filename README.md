@@ -47,9 +47,8 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-成功的话会在```~/```下生成```.ssh```文件夹，里面存放着私钥```id_rsa```和公钥```id_rsa.pub```。 利用记事本打开```id_rsa.pub```，复制里面的公钥并上传到Github即可。详细操作可见这篇博文：[如何使用SSH连接到Github](https://zhuanlan.zhihu.com/p/111344840)。然后，我们利用```ssh -T git@github.com```命令与Github连接即可。首次连接会返回以下信息：
+成功的话会在```~/```下生成```.ssh```文件夹，里面存放着私钥```id_rsa```和公钥```id_rsa.pub```。 利用记事本打开```id_rsa.pub```，复制里面的公钥并上传到Github即可。详细操作可见这篇博文：[如何使用SSH连接到Github](https://zhuanlan.zhihu.com/p/111344840)。接下来，我们还需激活与Github的连接，要完成这一步，只需在本地终端执行以下命令即可：
 
-如果已经连接成功再执行```ssh -T git@github.com```命令，则会返回以下信息：
 ```
 $ ssh -T git@github.com
 Hi MajestyV! You've successfully authenticated, but GitHub does not provide shell access.
