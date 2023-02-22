@@ -16,13 +16,13 @@ Git并不像[SVN](https://subversion.apache.org/)那样有个中心服务器。�
 $ ssh-keygen -t rsa -C "youremail@example.com"
 ```
 
-有时我们的本地机器可能会用到多个Git账号对于不同的项目或者是远程服务器，此时我们就需要不同的SSH Key来对应不同Git账号。但是如果我们已经有生成好的SSH Key文件又直接通过上述命令行来生成新Key，新的密钥就会把老的密钥覆盖掉。此时，我们就可以通过定义新的文件名来对密钥加以区分：
+有时我们的本地机器可能会用到多个Git账号对于不同的项目或者是远程服务器，此时我们就需要不同的SSH Key来对应不同Git账号。但是如果我们已经有生成好的SSH Key文件又直接通过上述命令行来生成新Key，新的密钥就会把老的密钥覆盖掉。此时，我们就可以通过给密钥文件定义新的文件名加以区分：
 
+```
+$ ssh-keygen -t rsa -C "youremail@example.com" -f ~/.ssh/id_rsa_github
+```
 
-
-
-
-标签-C后面的内容为注释，为了方便区分，可以把```your_email@youremail.com```改为个人的Github账号（当然，不管也是没问题的）。之后会要求确认路径和输入密码，在此只需一直回车选择默认选项就行，就像这样：
+标签-f指定密钥文件存储文件名，利用-f标签，我们可以给密钥文件赋予新的文件名。关于一台本地终端如何配置多个SSH Key，更多细节可以参考这篇博文：[Mac上配置SSH - 多个SSH](https://www.jianshu.com/p/d29ef6aefee2)。标签-t指定密钥类型，默认是 rsa ，可以省略。标签-C后面的内容为注释，为了方便区分，可以把```your_email@youremail.com```改为个人的Github账号（当然，不管也是没问题的）。之后会要求确认路径和输入密码，在此只需一直回车选择默认选项就行，就像这样：
 
 ```
 Generating public/private rsa key pair.
@@ -46,8 +46,6 @@ The key's randomart image is:
 |       .oo..     |
 +----[SHA256]-----+
 ```
-
-
 
 成功的话会在~/下生成.ssh文件夹，里面存放着私钥（id_rsa）和公钥（id_rsa.pub）。 利用记事本打开 id_rsa.pub，复制里面的公钥并上传到Github即可。详细操作可见这篇博文：[如何使用SSH连接到Github](https://zhuanlan.zhihu.com/p/111344840)。然后，我们利用```ssh -T git@github.com```命令与Github连接即可。首次连接会返回以下信息：
 
