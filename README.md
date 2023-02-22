@@ -22,7 +22,7 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 $ ssh-keygen -t rsa -C "youremail@example.com" -f ~/.ssh/id_rsa_github
 ```
 
-标签-f指定密钥文件存储文件名，利用-f标签，我们可以给密钥文件赋予新的文件名。关于一台本地终端如何配置多个SSH Key，更多细节可以参考这篇博文：[Mac上配置SSH - 多个SSH](https://www.jianshu.com/p/d29ef6aefee2)。标签-t指定密钥类型，默认是 rsa ，可以省略。标签-C后面的内容为注释，为了方便区分，可以把```your_email@youremail.com```改为个人的Github账号（当然，不管也是没问题的）。之后会要求确认路径和输入密码，在此只需一直回车选择默认选项就行，就像这样：
+标签```-f```指定密钥文件存储文件名，利用```-f```标签，我们可以给密钥文件赋予新的文件名。关于一台本地终端如何配置多个SSH Key，更多细节可以参考这篇博文：[Mac上配置SSH - 多个SSH](https://www.jianshu.com/p/d29ef6aefee2)。标签```-t```指定密钥类型，默认是 rsa ，可以省略。标签```-C```后面的内容为注释，为了方便区分，可以把```your_email@youremail.com```改为个人的Github账号（当然，不管也是没问题的）。之后会要求确认路径和输入密码，在此只需一直回车选择默认选项就行，就像这样：
 
 ```
 Generating public/private rsa key pair.
@@ -47,7 +47,7 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-成功的话会在~/下生成.ssh文件夹，里面存放着私钥（id_rsa）和公钥（id_rsa.pub）。 利用记事本打开 id_rsa.pub，复制里面的公钥并上传到Github即可。详细操作可见这篇博文：[如何使用SSH连接到Github](https://zhuanlan.zhihu.com/p/111344840)。然后，我们利用```ssh -T git@github.com```命令与Github连接即可。首次连接会返回以下信息：
+成功的话会在```~/```下生成```.ssh```文件夹，里面存放着私钥```id_rsa```和公钥```id_rsa.pub```。 利用记事本打开```id_rsa.pub```，复制里面的公钥并上传到Github即可。详细操作可见这篇博文：[如何使用SSH连接到Github](https://zhuanlan.zhihu.com/p/111344840)。然后，我们利用```ssh -T git@github.com```命令与Github连接即可。首次连接会返回以下信息：
 
 如果已经连接成功再执行```ssh -T git@github.com```命令，则会返回以下信息：
 ```
@@ -59,7 +59,7 @@ Hi MajestyV! You've successfully authenticated, but GitHub does not provide shel
 
 ### X. 上传代码到Github远程仓库
 
-首先，git add要上传的文件或者目录到暂存区：
+首先，```git add```要上传的文件或者目录到暂存区：
 
 ```
 $ git add [file1] [file2] ...  # 添加一个或多个文件到暂存区
@@ -67,7 +67,7 @@ $ git add [dir]                # 添加指定目录到暂存区，包括其子�
 $ git add .                    # 添加当前目录下的所有文件到暂存区
 ```
 
-然后，利用git commit命令将暂存区内容添加到本地仓库中：
+然后，利用```git commit```命令将暂存区内容添加到本地仓库中：
 
 ```
 $ git commit -m [message]      # 标签-m后面可以写上本次提交的备注信息
@@ -92,12 +92,12 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
-可以先git pull拉取远程仓库的最新版本融合到本地，再重新上传一次代码（即重复上述操作）。更多问题，可以参考这篇博文：[Git push 时如何避免出现 "Merge branch 'master' of ..."](https://www.cnblogs.com/Sinte-Beuve/p/9195018.html).
+可以先```git pull```拉取远程仓库的最新版本融合到本地，再重新上传一次代码（即重复上述操作）。更多问题，可以参考这篇博文：[Git push 时如何避免出现 "Merge branch 'master' of ..."](https://www.cnblogs.com/Sinte-Beuve/p/9195018.html).
 
 ## IV. 常用命令行详解
 
 ### (X) git pull - 下载远程代码并合并
-git pull 命令用于从远程获取代码并合并本地的版本。git pull 其实就是 git fetch 和 git merge FETCH_HEAD 的简写。
+```git pull```命令用于从远程获取代码并合并本地的版本。```git pull```其实就是```git fetch```和```git merge FETCH_HEAD```的简写。
 
 ```
 $ git pull <远程主机名> <远程分支名>:<本地分支名>
@@ -105,7 +105,7 @@ $ git pull <远程主机名> <远程分支名>:<本地分支名>
 
 ### (X) git push - 	上传远程代码并合并
 
-git push 命令用于从将本地的分支版本上传到远程并合并。
+```git push```命令用于从将本地的分支版本上传到远程并合并。
 
 ```
 $ git push <远程主机名> <本地分支名>:<远程分支名>
