@@ -54,6 +54,27 @@ $ ssh -T git@github.com
 Hi MajestyV! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+有时新的客户端初次连接Github时会显示这种警报：
+
+```
+$ ssh -T git@github.com
+The authenticity of host 'github.com (20.205.243.166)' can't be established.
+ECDSA key fingerprint is SHA256:XXXXXXXXXXXXXXXXXX.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+这种情况下其实没有任何问题，就是应当注意不要直接回车（按```enter```)，要先输入```Yes```再```enter```：
+
+```
+The authenticity of host 'github.com (20.205.243.166)' can't be established.
+ECDSA key fingerprint is SHA256:XXXXXXXXXXXXXXXXXX.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,20.205.243.166' (ECDSA) to the list of known hosts.
+Hi MajestyV! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+详情可以参考：[git使用--解决The authenticity of host ‘github.com (20.205.243.166)‘ can‘t be established](https://blog.csdn.net/mj_zm/article/details/120413479)。这类警报的原因是当前客户端为没有host关于Github网站的内容，所以出现问题。
+
 ### B. Managing project? (not yield decided)
 
 ### X. 上传代码到Github远程仓库
