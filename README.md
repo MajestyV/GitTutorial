@@ -63,7 +63,7 @@ ECDSA key fingerprint is SHA256:XXXXXXXXXXXXXXXXXX.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
 
-这种情况下其实没有任何问题，就是应当注意不要直接回车（按```enter```)，要先输入```Yes```再```enter```：
+这种情况下其实没有任何问题，就是应当注意不要直接回车（按```enter```)，要先输入``yes```再```enter```：
 
 ```
 The authenticity of host 'github.com (20.205.243.166)' can't be established.
