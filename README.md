@@ -1,4 +1,4 @@
-# GitTest - A test project for project management via Github
+# GitTutorial - A tutorial project for project management via Git
 
 ## I. 简介
 
