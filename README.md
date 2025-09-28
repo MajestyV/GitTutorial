@@ -2,7 +2,7 @@
 
 ## I. 简介
 
-Git并不像[SVN](https://subversion.apache.org/)那样有个中心服务器。目前我们使用到的Git命令都是在本地执行，比如你想通过Git分享你的代码或者与其他开发人员合作进行项目开发，又比如你有多台PC或者多个工作地点，想实现项目版本更新同步，你就需要将数据放到一台其他开发人员或其他PC能够连接的服务器上。为了方便项目开发及代码管理，在Github上建立远程仓库是十分明智的选择。
+[Git](https://git-scm.com/)并不像[SVN](https://subversion.apache.org/)那样有个中心服务器。目前我们使用到的Git命令都是在本地执行，比如你想通过Git分享你的代码或者与其他开发人员合作进行项目开发，又比如你有多台PC或者多个工作地点，想实现项目版本更新同步，你就需要将数据放到一台其他开发人员或其他PC能够连接的服务器上。无论是对于个人开发者亦或是开发团队，为了方便代码多地多人共同开发及项目管理，在[GitHub](https://github.com/)或者[GitLab](https://about.gitlab.com/)上建立远程仓库是十分明智的选择。
 
 ## II. 工作原理
 
@@ -15,7 +15,11 @@ Git 是一种分布式版本控制系统，广泛应用于项目管理和代码�
 
 通过上述机制，Git 能有效地帮助项目团队进行代码管理、协作开发和版本控制，提高项目开发效率和质量。
 
-## III. 具体操作
+## III. Git使用教程
+
+* [如何使用GitHub或GitLab进行项目管理](docs/如何使用GitHub或GitLab进行项目管理.md)
+
+## IV. 具体操作
 
 ### A. 关联个人电脑（PC）与Github账户
 
@@ -123,7 +127,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 可以先```git pull```拉取远程仓库的最新版本融合到本地，再重新上传一次代码（即重复上述操作）。更多问题，可以参考这篇博文：[Git push 时如何避免出现 "Merge branch 'master' of ..."](https://www.cnblogs.com/Sinte-Beuve/p/9195018.html).
 
-## IV. 常用命令行详解
+## V. 常用命令行详解
 
 ### (X) git pull - 下载远程代码并合并
 ```git pull```命令用于从远程获取代码并合并本地的版本。```git pull```其实就是```git fetch```和```git merge FETCH_HEAD```的简写。
