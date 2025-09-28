@@ -79,7 +79,7 @@ Hi MajestyV! You've successfully authenticated, but GitHub does not provide shel
 
 ### a. 如何测试与GitHub的链接
 
-经常，暗黑圣堂武士们虽然剪了辫子，但是在连接Aiur（划掉）GitHub时都会少许受阻，这里我们可以用以下的命令行测试与Aiur的链接情况：
+经常，暗黑圣堂武士们虽然剪了神经索，但是在连接[Aiur](https://starcraft.fandom.com/zh/wiki/%E8%89%BE%E5%B0%94?variant=zh-hk)（划掉）GitHub时都会少许受阻，这里我们可以用以下的命令行测试与Aiur的链接情况：
 
 ```shell
 $ ping github.com
